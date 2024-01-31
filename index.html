@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pradctice
+        </title>
+        <script src="./scripts/ScrollIndicator.js"></script>
+        <script src="./scripts/LoadNewPage.js"></script>
+        <script src="./scripts/Encrypt.js"></script>
+        <script src="./scripts/md5.js"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body class="master" id="master">
+
+        <div class="header" id="header">
+
+            <div class="selector" >
+                <div class="buttonContainer">
+
+                    <button class="headerButton selectButton" onclick="load('./sites/Home.html', 'Home')">Home</button> 
+                    <button class="headerButton selectButton" onclick="load('./sites/Encrypt.html','Encrypt')">Encrypt</button>
+                    <button class="headerButton selectButton" onclick="load('./sites/AboutUs.html', 'About Us')">About us</button>
+                    <!-- <button class="headerButton selectButton" onclick="EnableBackend();">Enable Backend</button> -->
+                </div>
+                <button onclick="window.location.href = './Private/index.html';" id="userName" class="headerButton adminButton">Login</button>
+            </div>
+            <div class="underline" id="underline"></div>
+        </div>
+        <div id="contentContainer" onscroll="Scrolled(); Reveal()"></div>
+
+    </body>
+    <script>
+        load('./sites/Home.html', "Home");
+    </script>
+</html>
